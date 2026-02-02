@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.track {
+  flex: 1;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.fill {
+  transition: width 0.5s ease;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, var(--dragon-emerald), var(--dragon-sky));
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  min-width: 60px;
+  text-align: right;
+}

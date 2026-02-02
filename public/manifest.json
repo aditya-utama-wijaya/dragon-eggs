@@ -1,0 +1,27 @@
+{
+  "name": "Dragon Eggs - Learn Chinese",
+  "short_name": "Dragon Eggs",
+  "description": "A gamified Chinese learning app for beginners",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fef9f3",
+  "theme_color": "#e63946",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "games"],
+  "lang": "en-US",
+  "dir": "ltr"
+}

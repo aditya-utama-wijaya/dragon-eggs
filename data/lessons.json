@@ -1,0 +1,232 @@
+{
+  "lessons": [
+    {
+      "id": "1",
+      "title": "Greetings",
+      "description": "Learn basic Chinese greetings",
+      "icon": "egg",
+      "color": "dragon-red",
+      "requiredStars": 0,
+      "activities": [
+        {
+          "type": "flashcard",
+          "content": {
+            "character": "你好",
+            "pinyin": "nǐ hǎo",
+            "meaning": "Hello",
+            "tone": [3, 3],
+            "audio": "/assets/audio/nihao.mp3"
+          }
+        },
+        {
+          "type": "flashcard",
+          "content": {
+            "character": "再见",
+            "pinyin": "zài jiàn",
+            "meaning": "Goodbye",
+            "tone": [4, 4],
+            "audio": "/assets/audio/zaijian.mp3"
+          }
+        },
+        {
+          "type": "quiz",
+          "question": "How do you say 'Hello' in Chinese?",
+          "options": [
+            { "text": "你好", "correct": true },
+            { "text": "再见", "correct": false },
+            { "text": "谢谢", "correct": false },
+            { "text": "对不起", "correct": false }
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "What does 再见 (zài jiàn) mean?",
+          "options": [
+            { "text": "Hello", "correct": false },
+            { "text": "Thank you", "correct": false },
+            { "text": "Goodbye", "correct": true },
+            { "text": "Sorry", "correct": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Numbers 1-5",
+      "description": "Master Chinese numbers from 1 to 5",
+      "icon": "egg",
+      "color": "dragon-orange",
+      "requiredStars": 2,
+      "activities": [
+        {
+          "type": "flashcard",
+          "content": {
+            "character": "一",
+            "pinyin": "yī",
+            "meaning": "One",
+            "tone": [1],
+            "audio": "/assets/audio/yi.mp3"
+          }
+        },
+        {
+          "type": "flashcard",
+          "content": {
+            "character": "二",
+            "pinyin": "èr",
+            "meaning": "Two",
+            "tone": [4],
+            "audio": "/assets/audio/er.mp3"
+          }
+        },
+        {
+          "type": "flashcard",
+          "content": {
+            "character": "三",
+            "pinyin": "sān",
+            "meaning": "Three",
+            "tone": [1],
+            "audio": "/assets/audio/san.mp3"
+          }
+        },
+        {
+          "type": "tone-tracer",
+          "character": "四",
+          "pinyin": "sì",
+          "meaning": "Four",
+          "tone": 4,
+          "audio": "/assets/audio/si.mp3"
+        },
+        {
+          "type": "quiz",
+          "question": "Which character represents the number 3?",
+          "options": [
+            { "text": "一", "correct": false },
+            { "text": "二", "correct": false },
+            { "text": "三", "correct": true },
+            { "text": "四", "correct": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Family Members",
+      "description": "Learn words for family members",
+      "icon": "egg",
+      "color": "dragon-gold",
+      "requiredStars": 5,
+      "activities": [
+        {
+          "type": "flashcard",
+          "content": {
+            "character": "妈妈",
+            "pinyin": "mā ma",
+            "meaning": "Mother",
+            "tone": [1, 1],
+            "audio": "/assets/audio/mama.mp3"
+          }
+        },
+        {
+          "type": "flashcard",
+          "content": {
+            "character": "爸爸",
+            "pinyin": "bà ba",
+            "meaning": "Father",
+            "tone": [4, 4],
+            "audio": "/assets/audio/baba.mp3"
+          }
+        },
+        {
+          "type": "sentence-builder",
+          "prompt": "I love my mother",
+          "correctOrder": ["我", "爱", "我的", "妈妈"],
+          "words": ["妈妈", "我", "爱", "我的"]
+        },
+        {
+          "type": "quiz",
+          "question": "What does 爸爸 (bà ba) mean?",
+          "options": [
+            { "text": "Mother", "correct": false },
+            { "text": "Father", "correct": true },
+            { "text": "Brother", "correct": false },
+            { "text": "Sister", "correct": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Colors",
+      "description": "Discover colors in Chinese",
+      "icon": "egg",
+      "color": "dragon-emerald",
+      "requiredStars": 8,
+      "activities": [
+        {
+          "type": "flashcard",
+          "content": {
+            "character": "红色",
+            "pinyin": "hóng sè",
+            "meaning": "Red",
+            "tone": [2, 4],
+            "audio": "/assets/audio/hongse.mp3"
+          }
+        },
+        {
+          "type": "flashcard",
+          "content": {
+            "character": "蓝色",
+            "pinyin": "lán sè",
+            "meaning": "Blue",
+            "tone": [2, 4],
+            "audio": "/assets/audio/lanse.mp3"
+          }
+        },
+        {
+          "type": "tone-tracer",
+          "character": "黄色",
+          "pinyin": "huáng sè",
+          "meaning": "Yellow",
+          "tone": 2,
+          "audio": "/assets/audio/huangse.mp3"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Common Phrases",
+      "description": "Essential everyday phrases",
+      "icon": "dragon",
+      "color": "dragon-sky",
+      "requiredStars": 11,
+      "activities": [
+        {
+          "type": "flashcard",
+          "content": {
+            "character": "谢谢",
+            "pinyin": "xiè xie",
+            "meaning": "Thank you",
+            "tone": [4, 4],
+            "audio": "/assets/audio/xiexie.mp3"
+          }
+        },
+        {
+          "type": "flashcard",
+          "content": {
+            "character": "对不起",
+            "pinyin": "duì bu qǐ",
+            "meaning": "Sorry",
+            "tone": [4, 0, 3],
+            "audio": "/assets/audio/duibuqi.mp3"
+          }
+        },
+        {
+          "type": "sentence-builder",
+          "prompt": "Thank you very much",
+          "correctOrder": ["非常", "感谢", "你"],
+          "words": ["你", "感谢", "非常"]
+        }
+      ]
+    }
+  ]
+}

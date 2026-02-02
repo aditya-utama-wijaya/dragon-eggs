@@ -1,0 +1,88 @@
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.card {
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: var(--spacing-2xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.character {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.pinyin {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.meaning {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.toneVisualization {
+  width: 100%;
+  margin: var(--spacing-xl) 0;
+  padding: var(--spacing-lg);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+}
+
+.toneTitle {
+  font-size: 1rem;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.toneSvg {
+  width: 100%;
+  height: 140px;
+}
+
+.tonePath {
+  animation: drawTone 2s ease-in-out infinite;
+}
+
+@keyframes drawTone {
+  0% {
+    stroke-dasharray: 0, 1000;
+  }
+  50% {
+    stroke-dasharray: 1000, 0;
+  }
+  100% {
+    stroke-dasharray: 1000, 0;
+  }
+}
+
+.audioButton {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-xl);
+  background: var(--dragon-emerald);
+  color: white;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all var(--transition-base);
+}
+
+.audioButton:hover {
+  transform: scale(1.05);
+  background: var(--dragon-sky);
+}
