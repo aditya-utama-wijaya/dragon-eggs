@@ -11,6 +11,13 @@ import { useUserProgress } from '@/context/UserProgressContext';
 import lessonsData from '@/data/lessons.json';
 import styles from './page.module.css';
 
+// Generate static params for all lessons
+export function generateStaticParams() {
+  return lessonsData.lessons.map((lesson) => ({
+    id: lesson.id,
+  }));
+}
+
 export default function LessonPage() {
   const params = useParams();
   const router = useRouter();
