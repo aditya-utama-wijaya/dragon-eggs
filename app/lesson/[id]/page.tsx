@@ -120,42 +120,46 @@ export default function LessonPage() {
   const renderActivity = () => {
     switch (currentActivity.type) {
       case 'flashcard':
+        const flashcardData = currentActivity as any;
         return (
           <Flashcard
-            character={currentActivity.content.character}
-            pinyin={currentActivity.content.pinyin}
-            meaning={currentActivity.content.meaning}
-            tone={currentActivity.content.tone}
-            audio={currentActivity.content.audio}
+            character={flashcardData.content.character}
+            pinyin={flashcardData.content.pinyin}
+            meaning={flashcardData.content.meaning}
+            tone={flashcardData.content.tone}
+            audio={flashcardData.content.audio}
           />
         );
 
       case 'quiz':
+        const quizData = currentActivity as any;
         return (
           <Quiz
-            question={currentActivity.question}
-            options={currentActivity.options}
+            question={quizData.question}
+            options={quizData.options}
             onAnswer={handleAnswer}
           />
         );
 
       case 'tone-tracer':
+        const toneData = currentActivity as any;
         return (
           <ToneTracer
-            character={currentActivity.character}
-            pinyin={currentActivity.pinyin}
-            meaning={currentActivity.meaning}
-            tone={currentActivity.tone}
-            audio={currentActivity.audio}
+            character={toneData.character}
+            pinyin={toneData.pinyin}
+            meaning={toneData.meaning}
+            tone={toneData.tone}
+            audio={toneData.audio}
           />
         );
 
       case 'sentence-builder':
+        const sentenceData = currentActivity as any;
         return (
           <SentenceBuilder
-            prompt={currentActivity.prompt}
-            correctOrder={currentActivity.correctOrder}
-            words={currentActivity.words}
+            prompt={sentenceData.prompt}
+            correctOrder={sentenceData.correctOrder}
+            words={sentenceData.words}
             onAnswer={handleAnswer}
           />
         );
