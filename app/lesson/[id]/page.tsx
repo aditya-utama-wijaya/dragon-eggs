@@ -30,6 +30,16 @@ export default function LessonPage() {
     }
   }, [lesson, router]);
 
+  // For flashcards and tone-tracer, allow proceeding immediately
+  useEffect(() => {
+    if (lesson && lesson.activities[currentStep]) {
+      const currentActivity = lesson.activities[currentStep];
+      if (currentActivity.type === 'flashcard' || currentActivity.type === 'tone-tracer') {
+        setCanProceed(true);
+      }
+    }
+  }, [lesson, currentStep]);
+
   if (!lesson) {
     return <div>Loading...</div>;
   }
@@ -154,13 +164,6 @@ export default function LessonPage() {
         return <div>Unknown activity type</div>;
     }
   };
-
-  // For flashcards and tone-tracer, allow proceeding immediately
-  useEffect(() => {
-    if (currentActivity.type === 'flashcard' || currentActivity.type === 'tone-tracer') {
-      setCanProceed(true);
-    }
-  }, [currentActivity.type, currentStep]);
 
   return (
     <ActivityShell
